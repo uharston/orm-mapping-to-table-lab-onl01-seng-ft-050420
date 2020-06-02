@@ -36,7 +36,7 @@ class Student
       @id = DB[:conn].execute("SELECT MAX(id) FROM students")[0][0]
   end 
 
-  def self.create(name, grade)
+  def self.create(name:, grade:)
     song = Song.new(name, grade)
     song.save
     song

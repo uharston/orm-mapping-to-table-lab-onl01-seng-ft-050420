@@ -42,12 +42,6 @@ class Student
     student 
   end 
 
-  # def self.create(hash)
-  #     hash.each do |key, value|
-  #       send(Student.new(key, value))
-  #     end 
-  #   song.save
-  #   song
-  # end
+
   
 end

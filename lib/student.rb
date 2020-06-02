@@ -35,13 +35,17 @@ class Student
       DB[:conn].execute(sql, self.name, self.grade)
       @id = DB[:conn].execute("SELECT MAX(id) FROM students")[0][0]
   end 
+  
+  def self.create(name:, grade:)
+    
+  end 
 
-  def self.create(hash)
-      hash.each do |key, value|
-        send("#{key}=", value)
-       end 
-    song.save
-    song
-  end
+  # def self.create(hash)
+  #     hash.each do |key, value|
+  #       send(Student.new(key, value))
+  #     end 
+  #   song.save
+  #   song
+  # end
   
 end
